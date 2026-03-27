@@ -1,21 +1,21 @@
-// FILMES
+// FILME
 let filmes = [
 
     {
-    titulo: "Interestellar",
-    imagem: "Imagens/Interstellar_Filme.png",
-    descricao: "Um grupo de astronautas viaja através de um buraco de minhoca em busca de um novo lar para a humanidade."
+    titulo: "RAPUNZEL",
+    imagem: "filme.jpg.webp",
+    descricao:" uma jovem de longos cabelos dourados aprisionada em uma torre alta por uma bruxa. Sem portas ou escadas, a torre só é acessível quando Rapunzel lança suas tranças. Ela anseia pela liberdade e é salva por um príncipe que ouve seu canto." 
     }
     
     ];
     
-    // SÉRIES
-    let series = [
+    // FILME
+    let filme = [
     
     {
-    titulo: "Stranger Things",
-    imagem: "Imagens/StrangerThings_Filme.jpg",
-    descricao: "Um grupo de crianças enfrenta forças sobrenaturais e experimentos secretos em uma pequena cidade."
+    titulo: "RATATOUILLE",
+    imagem: "filme.jpg",
+    descricao: "Remy, um rato francês com paladar refinado que sonha ser chef em Paris. Ele faz uma parceria improvável com Linguini, um ajudante de cozinha desajeitado, controlando seus movimentos sob o chapéu para criar pratos fantásticos no restaurante de seu ídolo, Gusteau."
     }
 
     
@@ -24,7 +24,7 @@ let filmes = [
     function mostrar(){
     
     let listaFilmes = document.getElementById("listaFilmes");
-    let listaSeries = document.getElementById("listaSeries");
+    let listaFilme = document.getElementById("listaFilme");
     
     filmes.forEach(function(f){
     
@@ -38,9 +38,9 @@ let filmes = [
     
     });
     
-    series.forEach(function(s){
+    filme.forEach(function(s){
     
-    listaSeries.innerHTML += `
+    listaFilme.innerHTML += `
     <div class="card">
     <img src="${s.imagem}">
     <h3>${s.titulo}</h3>
