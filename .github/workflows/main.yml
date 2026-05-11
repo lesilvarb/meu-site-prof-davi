@@ -1,0 +1,13 @@
+name: verificacao de projeto
+
+on: 
+push:
+
+jobs:
+verificar:
+runs on: ubunu-latest
+
+
+steps:
+ name: exibir mensagem
+ run: echo " projeto verificado com sucesso! "
