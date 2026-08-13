@@ -53,7 +53,3 @@ let filmes = [
     }
     
     mostrar();
-
-
-
-
