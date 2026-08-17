@@ -1,55 +1,89 @@
-// FILME
-let filmes = [
+import { filmes, series } from "./filmes.js";    
+    
+    // =========================
+    // FUNÇÃO CRIAR CARD
+    // =========================
+    
+    function criarCard(item, tipo){
 
-    {
-    titulo: "RAPUNZEL",
-    imagem: "filme.jpg.webp",
-    descricao:" uma jovem de longos cabelos dourados aprisionada em uma torre alta por uma bruxa. Sem portas ou escadas, a torre só é acessível quando Rapunzel lança suas tranças. Ela anseia pela liberdade e é salva por um príncipe que ouve seu canto." 
+        return `
+            <div class="card">
+    
+                <img src="${item.imagem}" alt="${item.titulo}">
+    
+                <h3>${item.titulo}</h3>
+    
+                <p>${item.descricao}</p>
+    
+                <div class="botoes">
+    
+                    <a
+                        href="player.html?tipo=${tipo}&id=${item.id}"
+                        class="btnPlay"
+                    >
+                        ▶ Assistir
+                    </a>
+    
+                    <button onclick="favoritar('${item.titulo}')">
+                        + Minha Lista
+                    </button>
+    
+                </div>
+    
+            </div>
+        `;
     }
     
-    ];
     
-    // FILME
-    let filme = [
-    
-    {
-    titulo: "RATATOUILLE",
-    imagem: "filme.jpg",
-    descricao: "Remy, um rato francês com paladar refinado que sonha ser chef em Paris. Ele faz uma parceria improvável com Linguini, um ajudante de cozinha desajeitado, controlando seus movimentos sob o chapéu para criar pratos fantásticos no restaurante de seu ídolo, Gusteau."
-    }
-
-    
-    ];
+    // =========================
+    // MOSTRAR FILMES E SÉRIES
+    // =========================
     
     function mostrar(){
     
-    let listaFilmes = document.getElementById("listaFilmes");
-    let listaFilme = document.getElementById("listaFilme");
+        let listaFilmes = document.getElementById("listaFilmes");
+        let listaSeries = document.getElementById("listaSeries");
     
-    filmes.forEach(function(f){
+        
+        listaFilmes.innerHTML = "";
+        listaSeries.innerHTML = "";
     
-    listaFilmes.innerHTML += `
-    <div class="card">
-    <img src="${f.imagem}">
-    <h3>${f.titulo}</h3>
-    <p>${f.descricao}</p>
-    </div>
-    `;
     
-    });
-    
-    filme.forEach(function(s){
-    
-    listaFilme.innerHTML += `
-    <div class="card">
-    <img src="${s.imagem}">
-    <h3>${s.titulo}</h3>
-    <p>${s.descricao}</p>
-    </div>
-    `;
-    
-    });
+        filmes.forEach(function(f){
+            listaFilmes.innerHTML += criarCard(f, "filme");
+        });
+        
+        series.forEach(function(s){
+            listaSeries.innerHTML += criarCard(s, "serie");
+        });
     
     }
+    
+    
+    // =========================
+    // BOTÃO ASSISTIR
+    // =========================
+    
+    function assistir(nome){
+    
+        alert("▶ Reproduzindo: " + nome);
+    
+    }
+    
+    
+    // =========================
+    // FAVORITOS
+    // =========================
+    
+    function favoritar(nome){
+    
+        alert("⭐ Adicionado à sua lista: " + nome);
+    
+    }
+
+    window.favoritar = favoritar;
+    
+    
+    // INICIAR
     
     mostrar();
