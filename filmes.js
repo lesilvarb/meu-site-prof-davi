@@ -2,72 +2,72 @@
 
 export const filmes = [
     {
-        id: "interestelar",
-        titulo: "Interestelar",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Um grupo de astronautas viaja através de um buraco de minhoca em busca de um novo lar para a humanidade.",
-        trailer: "i6avfCqKcQo?si=c67bqEGle7cgphln"
+        id: "O Mapa que me leva ate voce",
+        titulo: "O Mapa que me leva ate voce",
+        imagem: "Imagens/omapaque.jpg",
+        descricao: "Uma jovem ambiciosa viaja para o exterior a trabalho e conhece um estranho misterioso, dando início a uma jornada romântica inesperada.",
+        trailer: "lGizvdT45i0?si=p_Lj8JbD1v-OSJS0"
     },
 
     {
-        titulo: "Batman",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Em Batman: O Cavaleiro das Trevas, a paz é ameaçada pelo Coringa, um anarquista que instaura o caos.",
+        titulo: "Uma ideia de voce",
+        imagem: "Imagens/images.jpg",
+        descricao: "Solène, uma mãe solo de 40 anos, começa um romance inesperado com Hayes Campbell, o jovem de 24 anos que é vocalista da boy band mais famosa do planeta.",
+        trailer: "mO7Tv67sE1I?si=gnTSOsNi2UzT5ous"
+    },
+
+    {
+        titulo: "Como eu era entes de voce",
+        imagem: "Imagens/comoeuera.jpg",
+        descricao: "Louisa Clark é contratada para cuidar de Will Traynor, um jovem rico e tetraplégico que perdeu o gosto pela vida, mudando o destino um do outro.",
+        trailer: "CbJGH4ahPSU?si=ugIYpxT0-2rvmOZM"
+    },
+
+    {
+        titulo: "Para todos os garotos que ja amei",
+        imagem: "Imagens/paratodos.jpg",
+        descricao: "Lara Jean escreve cartas de amor secretas para todos os garotos por quem já se apaixonou, mas sua vida vira de cabeça para baixo quando as cartas são misteriosamente enviadas.",
         trailer: "ID_YOUTUBE"
     },
 
     {
-        titulo: "Ong Bak",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Ong-Bak: Guerreiro Sagrado, acompanha Ting (Tony Jaa), um jovem guerreiro de uma pacata vila tailandesa.",
+        titulo: "A cinco passos de voce",
+        imagem: "Imagens/acincopassos.jpg",
+        descricao: "Dois adolescentes que sofrem de fibrose cística se apaixonam em um hospital, mas são forçados a manter uma distância física segura para evitar infecções.",
         trailer: "ID_YOUTUBE"
     },
 
     {
-        titulo: "Kung-Fusão",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "A história acompanha Sing, um malandro trapalhão que tenta entrar para a temida Gangue do Machado.",
-        trailer: "ID_YOUTUBE"
-    },
-
-    {
-        titulo: "Homem Aranha",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "O jovem Peter Parker que, após ser picado por uma aranha, ganha superpoderes como força, agilidade e a capacidade de escalar paredes.",
-        trailer: "ID_YOUTUBE"
-    },
-
-    {
-        titulo: "Capitão América: Guerra Civil",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Após danos colaterais em missões dos Vingadores, a ONU propõe o Tratado de Sokovia, um acordo para regulamentar e controlar a equipe.",
+        titulo: "A culpa e das estrelas",
+        imagem: "Imagens/aculpaedas.jpg",
+        descricao: " Hazel Grace e Gus Waters são dois jovens pacientes com câncer que se conhecem em um grupo de apoio e compartilham uma jornada emocionante de amor e superação.",
         trailer: "ID_YOUTUBE"
     }
 ];
 
 export const series = [
     {
-        titulo: "Stranger Things",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Um grupo de crianças enfrenta forças sobrenaturais.",
+        titulo: "O Verão Que Mudou Minha Vida",
+        imagem: "Imagens/overao.webp",
+        descricao: "Baseada nos livros de Jenny Han, acompanha um triângulo amoroso intenso durante as férias de verão na praia.",
+        trailer: ""
+    },
+    {
+        titulo: " Sterling Point",
+        imagem: "Imagens/sterling.webp",
+        descricao: " Annie e seu irmão gêmeo Connor descobrem cartas escondidas pelo pai e uma herança inesperada após a morte do avô materno no Canadá.",
         trailer: "ID_YOUTUBE"
     },
     {
-        titulo: "Dark",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Dark é uma série focada em viagens no tempo e multiversos.",
+        titulo: "Legalmente loira",
+        imagem: "Imagens/loira.jpg",
+        descricao: " Longe de sua zona de conforto e de sua popularidade, ela precisa lidar com novos desafios sociais, dramas familiares, escolhas de moda e romances típicos da juventude",
         trailer: "ID_YOUTUBE"
     },
     {
-        titulo: "Breaking Bad",
-        imagem: "Imagens/imagem.jpg",
-        descricao: " A série acompanha Walter White e a sua transformação de um homem comum no chefão do tráfico.",
-        trailer: "ID_YOUTUBE"
-    },
-    {
-        titulo: "Peaky Blinders",
-        imagem: "Imagens/imagem.jpg",
-        descricao: "Peaky Blinders acompanha Thomas Shelby e sua gangue em Birmingham após a Primeira Guerra Mundial.",
+        titulo: "Depois daquele ano",
+        imagem: "Imagens/depois.jpg",
+        descricao: "Peaky Blinders acompanha T Um erro grave no passado afasta os dois por anos, até que um reencontro inesperado os obriga a enfrentar sentimentos mal resolvidos.",
         trailer: "ID_YOUTUBE"
     },
     {
